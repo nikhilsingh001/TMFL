@@ -1,0 +1,169 @@
+﻿@{
+}
+
+
+
+<div>
+    <table id="myTable" class="table table-bordered datatable">
+        <div id="mybutton">
+            @using (Html.BeginForm("ExportData", "Emp", FormMethod.Post))
+            {
+                <input type="submit" class="Export btn btn-primary" value="Export Report" />
+            }
+        </div>
+
+        <thead>
+            <tr>
+                <th style="text-align:center;">
+                    EmpId
+                </th>
+                <th>
+                    EmpName
+                </th>
+                <th>
+                    Designation
+                </th>
+                <th>
+                    Mobile No
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Region
+                </th>
+                <th>
+                    Zone
+                </th>
+                <th>
+                    Branch
+                </th>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    Date Birth
+                </th>
+                <th>
+                    Emp_Address
+                </th>
+                <th>
+                    Document
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.Datalist)
+            {
+                <tr>
+                    <td>
+                        @item.EmpId
+                    </td>
+                    <td>
+                        @item.Emp_name
+                    </td>
+                    <td>
+                        @item.DesignationName
+                    </td>
+                    <td>
+                        @item.Mobil_No
+                    </td>
+                    <td>
+                        @item.Email_Id
+                    </td>
+                    <td>
+                        @item.Regionname
+                    </td>
+                    <td>
+                        @item.Zonename
+                    </td>
+                    <td>
+                        @item.BranchName
+                    </td>
+                    <td>
+                        @item.Gender
+                    </td>
+                    <td>
+                        @item.Date_of_Birth
+                    </td>
+                    <td>
+                        @item.Emp_Address
+                    </td>
+                    <td>
+                        <input type="button" id="btn" class="details" value="ViewDoc">
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+
+@*<div class="modal fade" id="myModal" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Remark</h4>
+            </div>
+
+            <div id="divBodyFAS" class="modal-body">
+
+                <div>
+                    <table id="myTableDoc" class="table table-bordered datatable >
+                        <thead>
+                            <tr>
+                                <th>
+                                    Document Name
+                                </th>
+                            </tr>
+
+                        </thead>
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <input type="button" id="btnRemark" class="btn btn-info" value="Yes" />
+                <button type="button" id="btnNo" class="btn btn-info" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+<div id="partialModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Document View</h5>
+                <button type="button" class="close" data-dismiss="modal" id="btnmodel" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="btnclose" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    @*<script src="~/lib/jquery/dist/jquery.js"></script>*@
+
+<script src="~/lib/jquery/dist/Jquery2.js" asp-append-version="true"></script>
+<script src="~/lib/jquery/dist/jquery.dataTables.min.js" asp-append-version="true"></script>
+@*<script src="~/lib/jquery/dist/dataTables.bootstrap.js"></script>*@
+<script src="~/js/bootstrap-datepicker.js" asp-append-version="true"></script>
+<script src="~/js/JavaScript.js"></script>
+<link rel="stylesheet" href="~/css/model.css">
+
+<script src="~/lib/bootstrap/dist/js/bootstrap2.js"></script>
+<script type="text/javascript">
+  
+    $("#myTable").dataTable()
+
+</script>

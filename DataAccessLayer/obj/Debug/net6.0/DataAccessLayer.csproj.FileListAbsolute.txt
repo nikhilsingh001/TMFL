@@ -1,0 +1,15 @@
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll.config
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\Nikhil Singh\source\repos\TMFL_assignment\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

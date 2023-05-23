@@ -1,0 +1,111 @@
+﻿@using DataAccessLayer.Models;
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Employee Page";
+}
+
+
+
+<div>
+
+    <form action="Emp\Empdata" method="post"   enctype="multipart/form-data">
+        <div class="form-group">
+            <label id="lblid">EmpID</label>
+
+            <input type="text" id="txtempid" class="form-control" name="Empid" />
+        </div>
+
+        <div class="form-group" >
+            <label id="lblEmp">Emp Name</label>
+
+            <input type="text" id="txtempname" class="form-control" name="Empname" />
+        </div>
+
+        <div class="form-group">
+            <label id="lblid">Designation</label>
+            <select id="ddldes"  class="form-control" name="IdDesc">
+                <option>
+                    --select Designation ---
+                </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label id="lblMobil">Mobil No</label>
+            <input type="number" id="txtmob" class="form-control" name="Mobile_no" />
+        </div>
+
+        <div class="form-group">
+            <label id="lblEmail">Email Id</label>
+            <input type="email" id="txtemail" class="form-control" name="Email" />
+        </div>
+        <div class="form-group">
+            <label id="lblRegion">Region</label>
+            <select id="ddlRegion" class="form-control" name="IdRegio">
+                <option>
+                    --select Region ---
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label id="lblzone">Zone</label>
+            <select id="ddlzone" class="form-control" name="Idzone">
+                <option>
+                    --select Zone ---
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label id="lblBranch">Branch</label>
+            <select id="ddlbrach" class="form-control" name="IdBranch">
+                <option>
+                    --select Brach ---
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label id="lblGender">Gender</label>
+
+            <input type="radio" class="form-check-input" name="Gender"  value="Male">Male
+            <input type="radio" class="form-check-input" name="Gender" value="Female">Female
+        </div>
+        <div class="form-group">
+            <label id="lblDate">Date of Birth</label>
+            <input type="date" class="form-control" id="date" name="DateOFBirth">
+             @*  <input type="text" class="form-control" id="date" name="DateOFBirth">*@
+        </div>
+        <div class="form-group">
+            <label id="lblAdd">Address</label>
+           
+            <textarea name="Address" class="form-control" id="txtAdd"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label id="lblTexh">Technology</label>
+            @foreach (Technology item in ViewBag.Tech)
+            {
+                <input type="checkbox" class="form-check-input" id="chktech" name="ListTech" onclick="MutExChkList(this)" value=@item.Id>
+
+                @item.TechnologyName
+
+
+            }
+        </div>
+
+        <div class="form-group">
+            <label id="lblUpload">Document Upload</label>
+            <input type="file" class="form-control" id="file" name="file" multiple></input>
+        </div>
+
+        <input type="submit" onclick="Val();return false;" value="submit">
+    </form>
+   
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/bootstrap-datepicker.js"><</script>
+<script src="~/js/jquery.dataTables.min.js"></script>
+<script src="~/js/dataTables.bootstrap.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/js/JavaScript.js"></script>
+
